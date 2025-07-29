@@ -7,6 +7,8 @@ By default, JavaScript runs code line by line, in order. But control structures 
 
 ## Conditionals 
 
+Conditionals help the computer make decisions.
+
 ### Summary
 
 | Structure              | Syntax Example                                                                 | Description                                                                                     |
@@ -100,7 +102,9 @@ For example: Water temperature
 
 ## Repetitive
 
-- Repetitive structures or **loops** let you repeat a block of code multiple times, either a fixed number of times or until a condition is met. 
+- Repetitive structures or **loops** let you repeat a block of code multiple times, either a fixed number of times or until a condition is met. Like checking items off a to-do list: Step 1, Step 2, Step 3… until all done.  
+
+Another example could be when Spotify loads your playlist, it loops through all your songs and displays them one by one.
 
 ### Summary 
 

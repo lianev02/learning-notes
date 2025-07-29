@@ -72,11 +72,15 @@ A **variable** is like a labeled box where you want to store something. You can 
 
 **Example 1:**  
 
-	let name = "Lía"; 
+	let username = "Lía"; 
 
-(guestName is a box with my name on it)
+(username is a box with my name on it)
 
 Which can read: "Let me create a box called name, and inside it, I’ll put the value "Lía""
+
+Therefore, you write someone’s name on a jar (“username”) and place a card with “Lía” inside. Later, you can look inside that jar and read it again.  
+
+Used in real projects: When you log into Instagram, your username is stored in a variable like this.
 
 **Example 2:**  
 

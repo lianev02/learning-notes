@@ -2,12 +2,14 @@
 
 ## What is a function? 
 
-A **function** is like a reusable machine in your code.
+A **function** is like a recipe. You write it once and reuse it. 
 You give it some ingredients (called **parameters**), it does something with them, and it may give you something back (called the **return value**).
 
 You create it once, then use it many times.
 
-So it's like ***automation*** or a template. 
+So it's like ***automation*** or a template.  
+
+For example: Instagram’s “Send Message” feature likely calls a function each time you hit send. It’s reusable code triggered when needed.
 
 ## Why Use Functions?
 - Avoid repeating code
