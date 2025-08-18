@@ -235,3 +235,27 @@ Output:
     let item = house[roomName];
     console.log(`In the ${roomName} there is a ${item}`);
     }
+
+
+## Array Handling Functions (Methods)
+
+Arrays come with **predefined methods** that make it easy to manipulate them. The basic syntax is `array.method(arguments)`
+
+So yes, handling functions let you manipulate or “handle” what you see, extract, or modify, and whether the main array changes depends on the method.
+
+
+| Method       | Description                                                   | Analogy / How to Think About It                       | Example                                                                 |
+|--------------|---------------------------------------------------------------|------------------------------------------------------|-------------------------------------------------------------------------|
+| `concat()`   | Combines two arrays into a new array                          | Merging two playlists                                | `[1,2].concat([3,4]) // [1,2,3,4]`                                      |
+| `indexOf()`  | Returns the position of a value; -1 if not found              | Searching for a song in a playlist                   | `["apple","banana"].indexOf("banana") // 1`                              |
+| `lastIndexOf()` | Returns the last occurrence of a value                       | Finding the last time a song appears in a playlist  | `["a","b","a"].lastIndexOf("a") // 2`                                    |
+| `join()`     | Converts array into a string separated by a character         | Printing playlist as a list of song names           | `[1,2,3].join("-") // "1-2-3"`                                           |
+| `toString()` | Converts array into a string with commas                      | Same as join() with commas                           | `[1,2,3].toString() // "1,2,3"`                                         |
+| `reverse()`  | Reverses the order of the array                                | Playing playlist backwards                           | `[0,1,2,3].reverse() // [3,2,1,0]`                                      |
+| `push()`     | Adds a value to the end of the array                           | Stack: adding plates on top                          | `let arr=[]; arr.push("a") // ["a"]`                                     |
+| `pop()`      | Removes a value from the end of the array                      | Stack: removing top plate                             | `arr.pop() // "a"`                                                      |
+| `unshift()`  | Adds a value to the beginning of the array                     | Queue: new person joins front                        | `let q=[]; q.unshift("a") // ["a"]`                                     |
+| `shift()`    | Removes a value from the beginning of the array                | Queue: first person gets served                      | `q.shift() // "a"`                                                      |
+| `slice()`    | Returns a subarray from start index to end index (exclusive)   | Selecting a section of a playlist                     | `[0,1,2,3,4,5].slice(2,5) // [2,3,4]`                                   |
+| `sort()`     | Sorts array values                                              | Alphabetizing songs or sorting numbers              | `["c","a","b"].sort() // ["a","b","c"]`                                 |
+| `splice()`   | Add/remove elements at a specific index                        | Insert/remove songs at a specific spot in playlist   | `[1,2,3,4].splice(1,2,"a","b") // [1,"a","b",4]`                        |
