@@ -127,3 +127,66 @@ Now you can create multiple squares:
     console.log(sq1.area()); // 20
     console.log(sq2.area()); // 36
     console.log(sq3.area()); // 20
+
+
+## Arrays of Objects in JavaScript
+
+**Brief summary**
+- Objects let you group related information (like name, surname, age).
+- Arrays let you store many objects together.
+- A loop lets you go through them one by one and use their data.
+
+
+**An object groups related data together.**
+For example, instead of having three separate variables (name, surname, age), you put them inside one object.
+
+    function Person(_name, _surname, _age) {
+    this.name = _name;
+    this.surname = _surname;
+    this.age = _age;
+    }
+
+Here, Person is like a template (a constructor) for creating many people.
+
+Just like **arrays** can store numbers or strings, **they can also store objects.**
+
+    var people = new Array();
+    people[0] = new Person("Pedro", "Ramirez", 23);
+    people[1] = new Person("Luis", "Gonzalez", 29);
+    people[2] = new Person("Mario", "Estevez", 26);
+
+Now, people is an array, and each element is a Person object.
+
+**Accessing Objects in the Array**
+
+You can loop through the array and access each object’s properties:
+
+    var i, obj;
+
+    document.write("<table border='1'>");
+
+    for (i = 0; i < people.length; i++) {
+    obj = people[i];  // Take one object from the array
+
+    document.write("<tr>");
+    document.write("<td>" + obj.name + "</td>");
+    document.write("<td>" + obj.surname + "</td>");
+    document.write("<td>" + obj.age + "</td>");
+    document.write("</tr>");
+    }
+
+    document.write("</table>");
+
+
+What happens here?
+- The array people contains 3 objects (Pedro, Luis, Mario).
+- The for loop goes through each one.
+- For each object, we show its name, surname, and age inside a table.
+
+It would show the following table 
+
+| Name  | Surname   | Age |
+|-------|-----------|-----|
+| Pedro | Ramirez   | 23  |
+| Luis  | Gonzalez  | 29  |
+| Mario | Estevez   | 26  |
